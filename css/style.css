@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap');
+
+:root
+{
+    --orange:#e28525;
+    --cyan:#016972;
+    --green:#00403f;
+    --white:#f0f3f3;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 0;
+}
+.box
+{
+    width: 85%;
+    height: 80%;
+}
+.card-wrapper
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+}
+.card
+{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:white;
+    
+}
+.card img
+{
+    width: 6rem;
+    margin-bottom: 2rem;
+}
+.card h1
+{
+    margin-bottom: 2rem;
+    font-size: 2.3rem;
+}
+.card p
+{
+    font-size: 1.1rem;
+    line-height: 27px;
+    margin-bottom: 1.5rem;
+    text-align: start;
+}
+.card button
+{
+    width: 9.5rem;
+    height: 3rem;
+    border: none;
+    border-radius: 2.1rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-size:0.95rem ;
+    font-weight: 400;
+   
+}
+.card button:hover
+{
+    color: var(--white);
+    border: 2px solid var(--white);
+    background: transparent;
+}
+
+
+/*============================== For card one */
+#card1
+{
+    background: var(--orange);
+}
+
+#button-1
+{
+    color: var(--orange);
+}
+#button-1:hover
+{
+    color: var(--white);
+}
+
+/*============================= For card two */
+#card2
+{
+    background: var(--cyan);
+    
+}
+#button-2
+{
+    color: var(--cyan);
+}
+#button-2:hover
+{
+    color: var(--white);
+}
+/*================================== For card third */
+#card3
+{
+    background: var(--green);
+    
+}
+#button-3
+{
+    color: var(--green);
+}
+#button-3:hover
+{
+    color: var(--white);
+}
+
+
+/* ============================Media queries */
+
+@media(max-width:1025px)
+{
+    .card-wrapper
+    {
+        padding: 0;
+    }
+    .box
+    {
+        width: 90%;
+    }
+    .card
+    {
+        padding: 2rem;
+    }
+}
+@media(max-width:821px)
+{
+    .card-wrapper
+{
+    grid-template-columns: 1fr;
+}
+body{
+    height: 100%
+}
+};
+
+}
+
+@media(max-width:430px)
+{
+    .card-wrapper
+    {
+        padding: 0;
+    }
+    .card
+    {
+        padding: 2rem;
+    }
+
+}
+@media(max-width:380px)
+{
+    .card
+    {
+        padding:2rem 1.3rem;
+    }
+
+}
